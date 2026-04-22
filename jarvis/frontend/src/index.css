@@ -1,0 +1,21 @@
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --cyan: #00ffff;
+  --green: #00ff88;
+  --dark: #000810;
+  --panel: rgba(0, 20, 40, 0.85);
+  --border: rgba(0, 255, 255, 0.35);
+}
+
+body {
+  background: var(--dark);
+  color: var(--cyan);
+  font-family: 'Courier New', monospace;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
